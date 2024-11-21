@@ -1,0 +1,8 @@
+# This dockerfile is used to init the quasar project
+FROM node:18
+
+WORKDIR /app
+
+RUN npm install -g @quasar/cli
+
+CMD ["bash"]

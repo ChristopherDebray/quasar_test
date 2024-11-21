@@ -1,0 +1,12 @@
+services:
+  quasar-app:
+    build:
+      context: docker/quasar
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./quasar-project:/app
+      - /app/node_modules
+    ports:
+      - "127.0.0.1:9000:9000"
+    stdin_open: true
+    tty: true
