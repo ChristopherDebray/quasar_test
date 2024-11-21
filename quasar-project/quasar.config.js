@@ -188,6 +188,9 @@ module.exports = configure(function (/* ctx */) {
 
         // Windows only
         // win32metadata: { ... }
+
+        // This will set the platform on package, here it will force even mac to bundle into a windows app
+        platform: 'win32'
       },
 
       builder: {
